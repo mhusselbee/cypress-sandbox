@@ -1,12 +1,17 @@
 import { useState } from 'react';
 import { createContainer } from 'unstated-next';
 
-const useCartContainer = () => {
-    const [products, setProducts] = useState<Product[]>([]);
+const productsFixture = [{ name: 'Vegetable', price: 1, quantity: 1, sku: '11111', details: {} }];
 
-    const add = (product: Product) => {
+const useCartContainer = () => {
+    const [products, setProducts] = useState<Product[]>(productsFixture);
+
+    const addOne = (sku: string) => {
         setProducts(prev => {
-            prev.push(product);
+            const index = prev.findIndex(p => p.sku === sku);
+            if (index > 0) {
+                console.log(true);
+            }
             return prev;
         });
         console.log('product added');
@@ -21,16 +26,6 @@ const useCartContainer = () => {
         return products.length;
     };
 
-    const updateQuantity = (productSku: string, quantity: number) => {
-        setProducts(prev => {
-            if (prev.filter(p => p.sku === productSku).length > 0) {
-                prev.filter(p => p.sku === productSku)[0].quantity = quantity;
-            }
-            return prev;
-        });
-        console.log('product updated');
-    };
-
     const calculateSubTotal = () => {
         return products.reduce((prev, pro) => {
             return prev + pro.price;
@@ -38,9 +33,9 @@ const useCartContainer = () => {
     };
 
     return {
-        add,
+        products,
+        add: addOne,
         remove,
-        updateQuantity,
         calculateSubTotal,
     };
 };

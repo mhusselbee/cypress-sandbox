@@ -1,2 +1,3 @@
 export * from './state';
-export * from './CartButtons'
+export * from './CartButtons';
+export * from './CartList';

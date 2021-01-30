@@ -6,8 +6,9 @@ interface Cart {
 }
 
 type Product<TDetails = any> = {
-    details: TDetails;
     sku: string;
+    name: string;
+    details: TDetails;
     price: number;
     quantity: number;
 };
