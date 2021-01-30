@@ -23,8 +23,9 @@ const useCartContainer = () => {
 
     const updateQuantity = (productSku: string, quantity: number) => {
         setProducts(prev => {
-            prev.filter(p => p.sku === productSku)[0].quantity = quantity;
-
+            if (prev.filter(p => p.sku === productSku).length > 0) {
+                prev.filter(p => p.sku === productSku)[0].quantity = quantity;
+            }
             return prev;
         });
         console.log('product updated');

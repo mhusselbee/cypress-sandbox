@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 import { CartProvider } from './lib/state/useShoppingCart';
-import { CartConsumer } from './lib/cartConsumer';
+import { AddProductButton, RemoveProductButton, UpdateProductQuantityButton } from './lib/CartButtons';
 
 function App() {
     return (
         <CartProvider>
-            <CartConsumer />
+            <AddProductButton />
+            <RemoveProductButton />
+            <UpdateProductQuantityButton />
         </CartProvider>
     );
 }
