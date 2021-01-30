@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "es6",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "outDir": "./lib",
+    "rootDir": "src",
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "types": [
+      "cypress"
+    ]
+  },
+  "include": [
+    "src",
+    "integration",
+    "cypress/**/*"
+  ],
+  "exclude": [
+    "node_modules/**/*"
+  ]
+}
