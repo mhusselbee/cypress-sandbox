@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { createContainer } from 'unstated-next';
 
-const productsFixture = [{ name: 'Vegetable', price: 1, quantity: 1, sku: '11111', details: {} }];
+const productsFixture = [{ name: 'Vegetable', price: 1, quantity: 0, sku: '11111', details: {} }];
 
 const useCartContainer = () => {
     const [products, setProducts] = useState<Product[]>(productsFixture);

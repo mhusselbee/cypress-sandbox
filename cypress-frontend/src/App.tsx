@@ -1,17 +1,11 @@
 import React from 'react';
 import './App.css';
-import { CartProvider } from './lib/state/useShoppingCart';
-import { AddProductButton, RemoveProductButton } from './lib/CartButtons';
-import { CartList } from './lib';
+import Checkout from './lib/components/Checkout';
 
 function App() {
     return (
         <div className="AppHeader">
-            <CartProvider>
-                <CartList />
-                <AddProductButton />
-                <RemoveProductButton />
-            </CartProvider>
+            <Checkout />
         </div>
     );
 }
