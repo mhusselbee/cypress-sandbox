@@ -9,8 +9,10 @@ describe(`A customer using the checkout workflow in ${Cypress.env('environment')
                 customerData = data.customers;
                 cy.visit('http://localhost:3000');
                 //@ts-ignore
+                cy.signIn();
+                //@ts-ignore
                 cy.fillShipping(customerData[0]);
-                cy.get('.makeStyles-buttons-5 > .MuiButtonBase-root').click();
+                cy.get('.MuiButton-label').click();
             });
     });
 
