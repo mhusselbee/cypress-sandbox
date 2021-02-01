@@ -1,4 +1,4 @@
-describe('A customer using the checkout workflow', () => {
+describe(`A customer using the checkout workflow in ${Cypress.env('environment')}`, () => {
     let customerData: CustomerData[];
 
     it('can fill in their shipping information', () => {
