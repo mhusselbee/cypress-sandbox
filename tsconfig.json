@@ -18,7 +18,8 @@
   "include": [
     "src",
     "integration",
-    "cypress/**/*"
+    "cypress/**/*",
+    "types.d.ts"
   ],
   "exclude": [
     "node_modules/**/*"
