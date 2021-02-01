@@ -15,7 +15,7 @@
                 "cardName": "A Good Test",
                 "cardNumber": "1234123412341234",
                 "cvv": "123",
-                "expDate": "10/10/2025"
+                "expDate": "10/2025"
             }
         },
         {
@@ -25,6 +25,7 @@
                 "address1": "321 Emases Street",
                 "address2": "Unit 123",
                 "city": "New York",
+                "country": "United States",
                 "zip": "4958",
                 "state": "NY"
             },
@@ -32,7 +33,7 @@
                 "cardName": "Bad Tester",
                 "cardNumber": "1234123412341234",
                 "cvv": "123",
-                "expDate": "10/10/2025"
+                "expDate": "10/2019"
             }
         }
     ]
