@@ -1,0 +1,20 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "description": "db access using mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest --runInBand"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/mongodb": "^3.6.10",
+    "jest": "26.6.3",
+    "mongodb": "3.6.5",
+    "mongodb-memory-server": "6.9.6",
+    "ts-node": "9.1.1",
+    "typescript": "^3.9.7"
+  },
+  "author": "",
+  "license": "ISC"
+}
