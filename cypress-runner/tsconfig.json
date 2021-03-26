@@ -18,8 +18,8 @@
   "include": [
     "src",
     "integration",
-    "cypress-runner/cypress/**/*",
-    "types.d.ts"
+    "cypress/**/*",
+    "../types/shared.d.ts"
   ],
   "exclude": [
     "node_modules/**/*"
