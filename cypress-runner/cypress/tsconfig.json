@@ -5,7 +5,7 @@
     "moduleResolution": "node",
     "allowJs": true,
     "outDir": "./lib",
-    "rootDir": "src",
+    "rootDir": ".",
     "strictNullChecks": true,
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
@@ -18,7 +18,7 @@
   "include": [
     "src",
     "integration",
-    "cypress/**/*",
+    "cypress-runner/cypress/**/*",
     "types.d.ts"
   ],
   "exclude": [

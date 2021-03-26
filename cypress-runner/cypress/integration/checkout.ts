@@ -7,7 +7,7 @@ describe(`A customer using the checkout workflow in ${Cypress.env('environment')
             .then(data => {
                 console.log(data.customers);
                 customerData = data.customers;
-                cy.visit('http://localhost:3000');
+                cy.visit('http://localhost:3001');
                 //@ts-ignore
                 cy.signIn();
                 //@ts-ignore

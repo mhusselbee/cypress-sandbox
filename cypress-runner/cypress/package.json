@@ -2,10 +2,8 @@
   "name": "cypress-sandbox",
   "author": "Mateo Husselbee",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^6.3.0"
-  },
   "devDependencies": {
+    "cypress": "^6.8.0",
     "prettier": "^1.16.4",
     "typescript": "^3.9.7"
   }
