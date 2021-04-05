@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
 
 const steps = ["Shipping address", "Payment details", "Review your order"];
 
-function getStepContent(step: number) {
+const getStepContent = (step: number) => {
   switch (step) {
     case 0:
       return <AddressForm />;
@@ -64,7 +64,7 @@ function getStepContent(step: number) {
     default:
       throw new Error("Unknown step");
   }
-}
+};
 
 export default function Checkout() {
   const classes = useStyles();
