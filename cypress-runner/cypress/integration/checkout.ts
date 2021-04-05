@@ -23,7 +23,7 @@ describe(`A customer using the checkout workflow in ${Cypress.env('environment')
     });
 
     it('can review and confirm their order', () => {
-        cy.get('.MuiTypography-body2.MuiTypography-alignCenter').scrollIntoView();
+        cy.get('.MuiButton-contained > .MuiButton-label').scrollIntoView();
         cy.get('.MuiButton-contained').click();
     });
 });
